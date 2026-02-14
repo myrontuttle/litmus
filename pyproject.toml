@@ -1,0 +1,31 @@
+[project]
+name = "litmus"
+version = "0.0.0"
+description = "Test assumptions given a potential solution to an opportunity."
+authors = [
+  { name = "Myron Tuttle", email = "myrongt@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "vibetuner>=4.0.0",
+]
+
+[project.scripts]
+vibetuner = "vibetuner.cli:app"
+
+[dependency-groups]
+dev = [
+  "vibetuner[dev]",
+]
+
+[build-system]
+requires = ["uv_build>=0.10,<0.11"]
+build-backend = "uv_build"
+
+[tool.uv]
+cache-keys = [{ file = "pyproject.toml" }]
+
+# To develop against a local copy of vibetuner-py, add:
+# [tool.uv.sources]
+# vibetuner = { path = "packages/vibetuner-py", editable = true }

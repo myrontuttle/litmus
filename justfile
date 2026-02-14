@@ -1,0 +1,11 @@
+_default:
+    @just --list
+
+import '.justfiles/helpers.justfile'
+import '.justfiles/localdev.justfile'
+import '.justfiles/cicd.justfile'
+import '.justfiles/i18n.justfile'
+import '.justfiles/linting.justfile'
+import '.justfiles/formatting.justfile'
+import '.justfiles/scaffolding.justfile'
+import '.justfiles/gitflow.justfile'

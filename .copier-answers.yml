@@ -1,0 +1,11 @@
+_commit: v8.2.2
+_src_path: gh:alltuner/vibetuner
+author_email: myrongt@gmail.com
+author_name: Myron Tuttle
+company_name: Synaptic Solutions
+enable_watchtower: true
+fqdn: localhost
+project_description: Test assumptions given a potential solution to an opportunity.
+project_name: litmus
+project_slug: litmus
+python_version: '3.12'
