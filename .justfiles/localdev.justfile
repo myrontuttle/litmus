@@ -3,7 +3,7 @@ import 'deps.justfile'
 # Runs the dev environment with watch mode and cleans up orphans
 [group('Local Development')]
 dev:
-    ENVIRONMENT=development \
+    ENVIRONMENT=dev \
     COMPOSE_BAKE=true \
     PYTHON_VERSION={{ PYTHON_VERSION }} \
     COMPOSE_PROJECT_NAME={{ PROJECT_SLUG }} \
