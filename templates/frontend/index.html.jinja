@@ -1,0 +1,84 @@
+{% extends "base/skeleton.html.jinja" %}
+
+{% block content %}
+    <div class="min-h-screen bg-slate-950 text-slate-100 flex flex-col">
+        <!-- Hero Section -->
+        <section class="flex-1 flex items-center justify-center px-6 py-20">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-6xl md:text-7xl font-bold mb-6 tracking-tight">
+                    <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Litmus</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-300 font-light max-w-2xl mx-auto leading-relaxed mb-8">
+                    Test assumptions given a potential solution to an opportunity.
+                </p>
+                <div class="flex gap-4 justify-center">
+                    <button class="btn btn-primary btn-lg">Get Started</button>
+                    <button class="btn btn-outline btn-lg">Learn More</button>
+                </div>
+            </div>
+        </section>
+        <!-- Features Grid Section -->
+        <section class="px-6 py-20 bg-slate-900">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold mb-12 text-center">Features</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Feature Card 1 -->
+                    <div class="card bg-slate-800 border border-slate-700 hover:border-indigo-500 transition">
+                        <div class="card-body">
+                            <div class="text-4xl mb-4">⚡</div>
+                            <h3 class="card-title text-lg">Fast & Efficient</h3>
+                            <p class="text-slate-400">Build and test your assumptions quickly with a lightweight framework.</p>
+                        </div>
+                    </div>
+                    <!-- Feature Card 2 -->
+                    <div class="card bg-slate-800 border border-slate-700 hover:border-indigo-500 transition">
+                        <div class="card-body">
+                            <div class="text-4xl mb-4">🎯</div>
+                            <h3 class="card-title text-lg">Data-Driven</h3>
+                            <p class="text-slate-400">Make decisions based on real insights and measurable results.</p>
+                        </div>
+                    </div>
+                    <!-- Feature Card 3 -->
+                    <div class="card bg-slate-800 border border-slate-700 hover:border-indigo-500 transition">
+                        <div class="card-body">
+                            <div class="text-4xl mb-4">🔧</div>
+                            <h3 class="card-title text-lg">Flexible</h3>
+                            <p class="text-slate-400">Customize and adapt the framework to fit your unique workflow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stats Section -->
+        <section class="px-6 py-20">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-indigo-400 mb-2">1M+</div>
+                        <p class="text-slate-400">Tests Run</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-indigo-400 mb-2">98%</div>
+                        <p class="text-slate-400">Success Rate</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-indigo-400 mb-2">500+</div>
+                        <p class="text-slate-400">Active Users</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-indigo-400 mb-2">24/7</div>
+                        <p class="text-slate-400">Support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="px-6 py-20 bg-slate-900">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">Ready to get started?</h2>
+                <p class="text-xl text-slate-400 mb-8">Join thousands of teams testing their assumptions today.</p>
+                <button class="btn btn-primary btn-lg">Start Your Journey</button>
+            </div>
+        </section>
+    </div>
+{% endblock content %}

@@ -1,5 +1,5 @@
 [project]
-name = "litmus"
+name = "Litmus"
 version = "0.0.0"
 description = "Test assumptions given a potential solution to an opportunity."
 authors = [
@@ -16,7 +16,7 @@ vibetuner = "vibetuner.cli:app"
 
 [dependency-groups]
 dev = [
-  "vibetuner[dev]",
+  "vibetuner[dev]"
 ]
 
 [build-system]
