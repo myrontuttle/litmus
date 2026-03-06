@@ -1,6 +1,8 @@
 # Development Workflow Guide
 
-This guide establishes repeatable steps for developing this app using agile and lean software engineering best practices, with protocols for human-agent collaboration and staying current with the framework.
+This guide establishes repeatable steps for developing this app using agile and lean
+software engineering best practices, with protocols for human-agent collaboration
+and staying current with the framework.
 
 ---
 
@@ -534,6 +536,61 @@ git pull origin main
 # Document in sprint notes what was completed
 # Close related issues
 ```
+
+---
+
+## 6.5 Branch Cleanup & Maintenance
+
+**Why**: Long-lived branches create merge conflicts and make it harder to track active work. Clean up merged branches regularly.
+
+### After Merging a Feature Branch
+
+```bash
+# Delete local branch (after merge)
+git branch -d feature/my-feature
+
+# Delete remote branch
+git push origin --delete feature/my-feature
+
+# Or use GitHub CLI
+gh pr merge --delete-branch
+```
+
+### Weekly Branch Cleanup
+
+**Frequency**: Every Friday or end of sprint
+**Time**: ~5 minutes
+
+```bash
+# List all branches
+git branch -a
+
+# Delete merged local branches
+git branch --merged main | grep -v main | xargs git branch -d
+
+# Delete merged remote branches (be careful!)
+git branch -r --merged origin/main | grep -v main | sed 's/origin\///' | xargs -I {} git push origin --delete {}
+```
+
+### Branch Health Checks
+
+```bash
+# See branch age (old branches to review)
+git for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:relative)%09%(refname:short)'
+
+# Find branches not pushed to remote
+git branch -r | grep -v origin/main | sed 's/origin\///' > remote_branches.txt
+git branch | sed 's/*//' | xargs > local_branches.txt
+comm -23 local_branches.txt remote_branches.txt
+```
+
+### Best Practices
+
+- **Delete after merge**: Always delete feature branches after successful merge
+- **No long-lived branches**: Feature branches should live 1-7 days max
+- **Regular cleanup**: Weekly branch audit prevents accumulation
+- **Stale branch policy**: Delete branches older than 30 days without activity
+- **Branch naming**: Use descriptive names that indicate completion status
 
 ---
 

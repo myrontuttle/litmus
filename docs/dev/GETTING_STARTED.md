@@ -6,7 +6,8 @@ A quick guide to all the documentation for agile, lean development with coding a
 
 ## 📚 Documentation Overview
 
-This project now includes comprehensive guidance for developing with agile and lean software engineering practices. Here's what each document covers:
+This project now includes comprehensive guidance for developing with agile and lean
+software engineering practices. Here's what each document covers:
 
 ### [DEVELOPMENT_WORKFLOW.md](DEVELOPMENT_WORKFLOW.md)
 
@@ -16,7 +17,7 @@ The most important document. It covers:
 
 - **👥 Section 1**: Weekly dependency & framework updates (30 min/week)
 - **🤝 Section 2**: Human-agent sync protocols (daily/per-handoff)
-- **🎯 Sections 3-6**: Feature development workflow from requirements → merge
+- **🎯 Sections 3-7**: Feature development workflow from requirements → merge
 - **📤 Section 7**: Commit message conventions
 - **🤖 Section 9**: Specific instructions for agents
 - **⏱️ Section 10**: Quick reference commands
@@ -100,7 +101,69 @@ Practical TDD patterns and code generation techniques:
 
 ---
 
-## 🚀 Quick Start: Use These Now
+## �️ Prerequisites & Tool Installation
+
+Before starting development, ensure you have these tools installed. This project uses
+modern Python and JavaScript tooling that requires specific installations.
+
+### Required Tools
+
+| Tool | Purpose | Installation (Ubuntu/Debian) |
+|------|---------|------------------------------|
+| **uv** | Fast Python package manager | `curl -LsSf https://astral.sh/uv/install.sh \| sh` |
+| **bun** | Fast JavaScript runtime/package manager | `curl -fsSL https://bun.sh/install \| bash` |
+| **just** | Command runner for project tasks | `curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh \| bash` |
+| **git** | Version control | `sudo apt update && sudo apt install git` |
+| **Python 3.11+** | Programming language (managed by uv) | Included with uv |
+| **Node.js 18+** | JavaScript runtime (managed by bun) | Included with bun |
+
+### Installation Steps
+
+1. **Install uv** (Python package manager):
+
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   # Add ~/.cargo/bin to PATH if prompted
+   ```
+
+2. **Install bun** (JavaScript runtime):
+
+   ```bash
+   curl -fsSL https://bun.sh/install | bash
+   # Restart your shell or run: source ~/.bashrc
+   ```
+
+3. **Install just** (command runner):
+
+   ```bash
+   curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash
+   ```
+
+4. **Verify installations**:
+
+   ```bash
+   uv --version
+   bun --version
+   just --version
+   git --version
+   ```
+
+### Optional Dependencies
+
+For full development (database, background jobs):
+
+- **MongoDB**: `sudo apt install mongodb` or use Docker
+- **Redis**: `sudo apt install redis-server` or use Docker
+
+### Troubleshooting
+
+- **PATH issues**: After installation, restart your terminal or run `source ~/.bashrc`
+- **Permission denied**: You may need to add `~/.local/bin` to PATH
+- **Old versions**: Update with the same install commands above
+
+---
+
+## �🚀 Quick Start: Use These Now
 
 ### First Time Setup
 
@@ -130,7 +193,7 @@ git checkout -b feature/name
 
 # 3. Plan tests using [TDD_AND_CODEGEN.md](TDD_AND_CODEGEN.md) patterns
 
-# 4. Reference [DEVELOPMENT_WORKFLOW.md](DEVELOPMENT_WORKFLOW.md) Section 4-5 while implementing
+# 4. Reference [DEVELOPMENT_WORKFLOW.md](DEVELOPMENT_WORKFLOW.md) Section 4-6 while implementing
 
 # 5. Before pushing:
 just format && just lint && uv run pytest -v
