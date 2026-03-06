@@ -14,8 +14,8 @@ exclude = [
   "CHANGELOG.md",
 ]
 
-# Allow bare URLs without angle brackets
-disable = ["MD034"]
+# Allow bare URLs without angle brackets and ignore long lines
+disable = ["MD034", "MD013"]
 
 # Rule-specific configurations
 [MD013]
