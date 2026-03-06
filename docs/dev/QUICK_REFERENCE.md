@@ -58,6 +58,7 @@ git push origin feature/name
 ```
 
 **Common Issues:**
+
 - **Untracked files error**: Run `git add .` first
 - **Nothing to commit**: Check `git status` - files may need adding
 

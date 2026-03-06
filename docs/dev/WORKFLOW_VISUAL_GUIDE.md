@@ -280,7 +280,7 @@ Q: How do I plan a sprint?
 ```text
 □ Read GETTING_STARTED.md (you're here!)
 □ Skim DEVELOPMENT_WORKFLOW.md § 2-3
-□ Bookmark QUICK_REFERENCE.md  
+□ Bookmark QUICK_REFERENCE.md
 □ Review TEMPLATES.md
 □ Scan TDD_AND_CODEGEN.md examples
 □ Copy templates into GitHub repo

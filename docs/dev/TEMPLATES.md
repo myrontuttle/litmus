@@ -27,14 +27,14 @@ As a [user type], I want to [action/feature], so that [benefit/outcome].
 
 ### Happy Path
 
-**Given** [initial state]  
-**When** [user action]  
+**Given** [initial state]
+**When** [user action]
 **Then** [expected outcome]
 
 ### Error Handling
 
-**Given** [edge case state]  
-**When** [action that could fail]  
+**Given** [edge case state]
+**When** [action that could fail]
 **Then** [handled gracefully, error message: "..."]
 
 ## Technical Details
@@ -61,6 +61,11 @@ async def test_feature_requirement_1():
     assert result == expected
 ```
 ```
+
+
+```text
+
+```text
 
 ## Implementation Notes
 
@@ -98,7 +103,7 @@ Use this for reporting issues.
 2. Step 2
 3. Step 3
 
-**Expected Result**: [What should happen]  
+**Expected Result**: [What should happen]
 **Actual Result**: [What happens instead]
 
 ## Environment
@@ -118,7 +123,7 @@ Use this for reporting issues.
 [Your hypothesis about what's wrong, if known]
 
 ## Related Issues
-Duplicates: #[issue]  
+Duplicates: #[issue]
 Related: #[issue]
 ```
 
@@ -166,6 +171,11 @@ uv run pytest -v tests/test_new_feature.py
 # ✅ 8 passed in 0.45s
 ```
 ```
+
+
+```text
+
+```text
 
 ### Manual Testing
 
@@ -424,6 +434,11 @@ async def create_item(item: CreateItemSchema, request: Request):
     return {"id": item.id, "status": "created"}
 ```
 ```
+
+
+```text
+
+```text
 
 ## Testing
 

@@ -143,7 +143,7 @@ async def test_user_model_with_required_fields():
     assert user.email == "test@example.com"
     assert user.password_hash == "$2b$hashed"
 
-@pytest.mark.asyncio 
+@pytest.mark.asyncio
 async def test_user_model_email_validation():
     """User email must be valid format."""
     with pytest.raises(ValueError):
@@ -783,7 +783,7 @@ async def test_publish_article_notifies_subscribers():
 - [ ] Test covers one scenario only
 - [ ] Confirm test fails: `uv run pytest -v`
 
-## [ ] GREEN Phase  
+## [ ] GREEN Phase
 
 - [ ] Write minimal code to pass test
 - [ ] Don't add extra features yet

@@ -6,8 +6,8 @@ This guide establishes repeatable steps for developing this app using agile and 
 
 ## 1. Weekly Dependency & Framework Updates
 
-**Frequency**: Every Monday morning (or weekly sync point)  
-**Time**: ~30 minutes  
+**Frequency**: Every Monday morning (or weekly sync point)
+**Time**: ~30 minutes
 **Owner**: Either human or agent (assign in current sprint)
 
 ### Step 1: Check for Updates
@@ -72,7 +72,7 @@ Title: chore: update dependencies and address framework changes
 
 ### Daily Standup (Async)
 
-**When**: End of day or before handing off to agent  
+**When**: End of day or before handing off to agent
 **Format**: Update the project's TODO tracking (in code or project management tool)
 
 For each active task, document:
@@ -189,8 +189,8 @@ git push origin feature/my-feature
 
 ### Phase 1: Requirements & Planning (30 min - 1 hr)
 
-**Input**: Feature description, user story, or bug report  
-**Owner**: Usually the human or product person  
+**Input**: Feature description, user story, or bug report
+**Owner**: Usually the human or product person
 **Output**: Clear requirements document
 
 #### Create Issue
@@ -749,7 +749,7 @@ uv run vibetuner db migrate
 
 ### ⚠️ Stale Dependencies
 
-**Problem**: Local tests pass, CI fails  
+**Problem**: Local tests pass, CI fails
 **Solution**: Update and test locally
 
 ```bash
@@ -761,7 +761,7 @@ uv run pytest -v
 
 ### ⚠️ Git Untracked Files Error
 
-**Problem**: "Untracked files" error when trying to commit  
+**Problem**: "Untracked files" error when trying to commit
 **Solution**: Add untracked files to git staging first
 
 ```bash
@@ -784,7 +784,7 @@ git commit -m "feat: add new feature"
 
 ### ⚠️ Human-Agent Code Conflicts
 
-**Problem**: Agent changed files you're also working on  
+**Problem**: Agent changed files you're also working on
 **Solution**: Communicate in GitHub before starting
 
 - Comment on issue with your intent
@@ -793,7 +793,7 @@ git commit -m "feat: add new feature"
 
 ### ⚠️ Tests Failing After Update
 
-**Problem**: Dependencies updated, tests break  
+**Problem**: Dependencies updated, tests break
 **Solution**: Identify breaking change
 
 ```bash
@@ -808,7 +808,7 @@ uv run pytest -vv tests/test_file.py::test_name
 
 ### ⚠️ Framework Deprecations
 
-**Problem**: Vibetuner library changed API  
+**Problem**: Vibetuner library changed API
 **Solution**: Refer to framework docs
 
 - Check: <https://vibetuner.alltuner.com/llms.txt>
