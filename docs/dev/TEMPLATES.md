@@ -51,32 +51,6 @@ As a [user type], I want to [action/feature], so that [benefit/outcome].
 - Related issues: #[issue number]
 - Blocks: #[issue number]
 
-### Acceptance Tests
-
-```python
-# Pseudo-code for tests to write
-@pytest.mark.asyncio
-async def test_feature_requirement_1():
-    """Verify acceptance criterion 1"""
-    assert result == expected
-```
-```
-
-
-```text
-
-```text
-
-```text
-
-```text
-
-```text
-
-```text
-
-```text
-
 ## Implementation Notes
 
 - Suggested files: `src/app/models/`, `src/app/frontend/routes/`
@@ -91,7 +65,7 @@ async def test_feature_requirement_1():
 - [ ] User documentation updated
 - [ ] Works locally and on staging
 
-```text
+````
 
 ---
 
@@ -103,12 +77,14 @@ Use this for reporting issues.
 # Bug Report: [Short Description]
 
 ## Severity
+
 - [ ] Critical (app broken/unusable)
 - [ ] High (feature broken)
 - [ ] Medium (workaround exists)
 - [ ] Low (minor issue)
 
 ## Steps to Reproduce
+
 1. Step 1
 2. Step 2
 3. Step 3
@@ -117,22 +93,22 @@ Use this for reporting issues.
 **Actual Result**: [What happens instead]
 
 ## Environment
+
 - OS: [Linux/macOS/Windows]
 - Python version: [output of `python --version`]
 - Branch: [feature/X or main]
 
 ## Error Message / Logs
-```
 
 [Paste full error message]
 [Include stack trace]
 
-```text
-
 ## Possible Cause
+
 [Your hypothesis about what's wrong, if known]
 
 ## Related Issues
+
 Duplicates: #[issue]
 Related: #[issue]
 ```
@@ -170,34 +146,6 @@ Related: #[related issue]
 - `tests/test_models/test_new_model.py` - Model initialization and validation
 - `tests/test_routes/test_endpoint.py` - Endpoint behavior and error handling
 - `tests/test_services/test_logic.py` - Service business logic
-
-### Test Results
-
-```bash
-# Run this command to reproduce tests:
-uv run pytest -v tests/test_new_feature.py
-
-# Output:
-# ✅ 8 passed in 0.45s
-```
-```
-
-```text
-
-
-```text
-
-```text
-
-
-```text
-
-```text
-
-
-```text
-
-```text
 
 ### Manual Testing
 
@@ -267,7 +215,7 @@ uv run pytest -v tests/test_new_feature.py
 - [ ] Documentation is clear
 - [ ] No merge conflicts
 
-```text
+````
 
 ---
 
@@ -279,6 +227,7 @@ Use this when submitting a bug fix.
 # PR: Fix [Bug Description]
 
 ## Problem
+
 What was broken?
 
 [Reference to bug report issue #XXX]
@@ -286,29 +235,32 @@ What was broken?
 **Reproduction**: [Steps that would show the bug]
 
 ## Solution
+
 How was it fixed?
 
 [Explanation of the fix]
 
 ## Root Cause
+
 Why did this happen?
 
 [Analysis of what caused the issue]
 
 ## Code Changes
+
 - File 1: [What changed and why]
 - File 2: [What changed and why]
 
 ## Testing
+
 ### Verification of Fix
-```bash
-# Before fix:
+
+Before fix:
 [Show that bug manifests]
 
-# After fix:
-uv run pytest -v -k "test_bugfix"
-# ✅ All tests pass
-```
+After fix:
+[uv run pytest -v -k "test_bugfix"]
+All tests pass
 
 ## Code Quality
 
@@ -332,7 +284,7 @@ None / [list if any]
 - Safe to deploy immediately: Yes/No
 - Requires configuration: Yes/No
 
-```text
+````
 
 ---
 
@@ -344,6 +296,7 @@ Use this for code restructuring and improvements.
 # PR: Refactor [Component/Feature]
 
 ## Motivation
+
 Why is this refactoring needed?
 
 - [ ] Improved readability
@@ -353,6 +306,7 @@ Why is this refactoring needed?
 - [ ] Preparatory for [feature/fix]
 
 ## Changes
+
 What was refactored?
 
 [Overview of changes]
@@ -360,18 +314,22 @@ What was refactored?
 ## Before / After
 
 ### Before
+
 [Snippet of old code]
 
 ### After
+
 [Snippet of new code]
 
 ## Impact Analysis
+
 - [ ] No functional changes
 - [ ] Tests pass unchanged: `uv run pytest -v`
 - [ ] Performance: [same/improved/tested]
 - [ ] Public API: [unchanged/documented]
 
 ## Code Quality
+
 - [ ] All tests passing
 - [ ] Type checking passes
 - [ ] Code formatted
@@ -379,6 +337,7 @@ What was refactored?
 - [ ] No functional regressions
 
 ## Review Focus
+
 - [Specific areas to focus review on]
 ```
 
@@ -447,30 +406,7 @@ To see the pattern, check:
 
 ### Expected Output
 
-```python
-# Example of what implementation should look like:
-@router.post("/api/items", status_code=201)
-async def create_item(item: CreateItemSchema, request: Request):
-    """Create a new item."""
-    # Implementation here
-    return {"id": item.id, "status": "created"}
-```
-```
-
-
-```text
-
-```text
-
-```text
-
-```text
-
-```text
-
-```text
-
-```text
+[Example of what implementation should look like]
 
 ## Testing
 
@@ -485,14 +421,15 @@ Agent should verify:
 
 [Any caveats, gotchas, or additional context]
 
-```text
+````
 
 ---
 
 ## 📋 Commit Message Best Practices
 
 ### Format (Conventional Commits)
-```
+
+```text
 
 <type>(<scope>): <subject>
 
