@@ -1,6 +1,6 @@
 [project]
 name = "Litmus"
-version = "0.0.0"
+version = "0.1.0"
 description = "Test assumptions given a potential solution to an opportunity."
 authors = [
   { name = "Myron Tuttle", email = "myrongt@gmail.com" },
