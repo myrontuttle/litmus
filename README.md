@@ -1,17 +1,13 @@
 # Litmus
 
-A FastAPI + MongoDB + HTMX web application built with the vibetuner framework. This project serves as a scaffolded template for modern web applications with real-time features and robust backend architecture.
+Litmus is a personal tool for systematically capturing, exploring, and validating ideas. It operationalises the **Lean Startup / Build-Measure-Learn** loop at the level of individual opportunities — turning vague needs and desires into structured hypotheses, tests, and evidence.
 
 ## ✨ Features
 
-- **Modern Stack**: FastAPI backend with MongoDB (Beanie ODM) and HTMX frontend
-- **Real-time Updates**: Server-Sent Events (SSE) for live data updates
-- **Authentication**: Built-in user management with OAuth support
-- **Responsive UI**: Tailwind CSS with DaisyUI components
-- **Background Jobs**: Redis-powered task queue for async processing
-- **Internationalization**: Multi-language support with Babel
-- **Testing**: Comprehensive test suite with pytest fixtures
-- **Development Tools**: Hot reload, auto-formatting, and linting
+- **Chat Interface**: Chat to refine opportunities, solutions, assumptions, and tests
+- **AI Suggestions**: Get feedback and gain clarity from LLMs
+- **Tree / Hierarchy View**: See opportunity solution tree for organization
+- **Tag Management**: Tag elements for cross-domain insights
 
 ## 🚀 Quick Start
 
@@ -249,9 +245,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Icons**: [Heroicons](https://heroicons.com/)
 - **Testing**: [pytest](https://pytest.org/) with custom fixtures
 - **Development**: Comprehensive tooling with `uv`, `ruff`, `djlint`, and more
+- **Built with ❤️ using vibetuner framework**
 
 ---
-
-**Built with ❤️ using vibetuner framework**
 
 *For detailed development guidance, start with [GETTING_STARTED.md](docs/dev/GETTING_STARTED.md)*
